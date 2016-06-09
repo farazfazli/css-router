@@ -1,0 +1,106 @@
+/******************************************************************
+CSS Router written by Faraz Fazli - Released under the MIT License
+https://github.com/farazfazli/css-router
+*******************************************************************/
+* {
+  font-family: arial;
+}
+
+/* Show home when first loaded -- initial page */
+main .one {
+  height: 100%;
+}
+
+/* Disable scrolling for body */
+body {
+  font-size: 1.3em;
+  background: white;
+  overflow: hidden;
+}
+
+h1, body {
+  margin: 0;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+p {
+  margin: 1%;
+}
+
+/* Page-specific content, enable scrolling */
+.content {
+  padding: 1%;
+  overflow: visible;
+}
+
+/* Menu options, animation */
+.menu {
+  height: 0% ;
+  overflow: auto;
+  transition: all .3s;
+  visibility: visible;
+}
+
+/*** Menu labels ***/
+label {
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  color: blue;
+  padding: .7%;
+}
+
+label:hover {
+  color: white;
+  background: blue;
+}
+
+strong {
+  padding: 1%;
+  font-size: 1.3em;
+}
+/*****************/
+
+/*** Navbar properties ***/
+.navbar {
+  margin-top: 1%;
+  background-color: white;
+}
+/************************/
+
+/*** Pure CSS navbar functionality ***/
+/* When other menu items are first checked, hide initial page */
+#two:checked ~ main .one,
+#three:checked ~ main .one,
+#four:checked ~ main .one {
+  height: 0% ;
+  overflow: auto;
+  transition: all .3s;
+  visibility: visible;
+}
+
+/* When menu item clicked */
+#one:checked ~ main .one,
+#two:checked ~ main .two,
+#three:checked ~ main .three,
+#four:checked ~ main .four {
+  display: block;
+  height: 100%;
+  visibility: visible;
+}
+
+/* Make radio buttons invisible */
+.invisible {
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+  opacity: 0;
+  position: absolute;
+  width: 1px;
+}
+/**************************************/
+
+/* Divider */
+hr {
+  border-color: blue;
+}
