@@ -1,2 +1,8 @@
 # css-router
-Navigation powered by pure CSS, not JS.
+CSS Router allows you to create single page websites that swap out views, without having to use JavaScript.
+
+# Getting Started
+Check out the [GitHub site](https://farazfazli.github.io/css-router), which shows a demo as well as serves as a README for this project.
+
+# Credit
+I learned a lot from http://codepen.io/SitePoint/pen/aLjJA which helped me build this!
