@@ -30,7 +30,7 @@ p {
 
 /* Page-specific content, enable scrolling */
 .content {
-  padding: 5%;
+  margin: 5%;
   width: 100%;
   overflow: visible;
 }
