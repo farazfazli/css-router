@@ -31,6 +31,7 @@ p {
 /* Page-specific content, enable scrolling */
 .content {
   padding: 1%;
+  width: 100%;
   overflow: visible;
 }
 
