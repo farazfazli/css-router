@@ -44,11 +44,9 @@ p {
 
 /*** Menu labels ***/
 label {
-  border-style: solid;
-  border-width: 1px;
   cursor: pointer;
   color: blue;
-  padding: .7%;
+  padding: .5vh;
 }
 
 label:hover {
@@ -57,15 +55,20 @@ label:hover {
 }
 
 strong {
-  padding: 1%;
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 /*****************/
 
 /*** Navbar properties ***/
 .navbar {
   margin-top: 1%;
-  background-color: white;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.navbar::-webkit-scrollbar {
+  display: none;
 }
 /************************/
 
@@ -103,6 +106,8 @@ strong {
 /* Divider */
 hr {
   border-color: blue;
+  margin: 0;
+  width: 100vmax;
 }
 
 /* Make code look like code, sometimes needs to be set explicitly */
