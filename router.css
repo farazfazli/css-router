@@ -110,6 +110,24 @@ hr {
   width: 100vmax;
 }
 
+/* Optional footer/code styling */
+footer {
+  background: blue;
+  height: auto;
+  width: 100vmax;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+footer * {
+  color: white;
+}
+
+footer p {    
+    padding: .1vmin;
+}
+
 /* Make code look like code, sometimes needs to be set explicitly */
 code {
   font-family: monospace;
