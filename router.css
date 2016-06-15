@@ -13,7 +13,7 @@ html, body {
 }
 
 main {
-  height: 93%;
+  height: 100%;
 }
 
 /* Show home when first loaded -- initial page */
@@ -121,7 +121,7 @@ hr {
 /* Optional footer/code styling */
 footer {
   background: blue;
-  height: 7%;
+  height: auto;
   width: 100vmax;
   position: absolute;
   bottom: 0;
