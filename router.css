@@ -6,6 +6,11 @@ https://github.com/farazfazli/css-router
   font-family: arial;
 }
 
+main {
+  overflow: none;
+  height: 93%;
+}
+
 /* Show home when first loaded -- initial page */
 main .one {
   height: 100%;
@@ -16,7 +21,6 @@ body {
   font-size: 1.3em;
   background: white;
   overflow: hidden;
-  height: 100%;
 }
 
 h1, body {
