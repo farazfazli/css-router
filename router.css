@@ -7,7 +7,7 @@ https://github.com/farazfazli/css-router
 }
 
 main {
-  overflow: none;
+  overflow: hidden;
   height: 93%;
 }
 
@@ -20,7 +20,6 @@ main .one {
 body {
   font-size: 1.3em;
   background: white;
-  overflow: hidden;
 }
 
 h1, body {
