@@ -12,9 +12,18 @@ html, body {
   height: 100%;
 }
 
+::-webkit-scrollbar {
+    width: 2px;
+    height: 0;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: blue;
+}
+
 main {
   height: 100%;
-  overflow-y: visible;
   visibility: hidden;
 }
 
@@ -23,7 +32,6 @@ main .one {
   height: 100%;
 }
 
-/* Disable scrolling for body */
 body {
   font-size: 1.3em;
   background: white;
@@ -79,8 +87,9 @@ strong {
 }
 
 .navbar::-webkit-scrollbar {
-  display: none;
+  height: 10%;
 }
+
 /************************/
 
 /*** Pure CSS navbar functionality ***/
