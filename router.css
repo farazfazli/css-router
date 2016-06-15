@@ -37,12 +37,8 @@ body {
   background: white;
 }
 
-h1, body {
+h1, body, p {
   margin: 1%
-}
-
-p {
-  margin: 1%;
 }
 
 /* Page-specific content, enable scrolling */
@@ -145,7 +141,7 @@ footer * {
 }
 
 footer p {    
-    padding: .1vmin;
+  padding: .1vmin;
 }
 
 /* Make code look like code, sometimes needs to be set explicitly */
