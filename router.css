@@ -12,10 +12,6 @@ html, body {
   height: 100%;
 }
 
-main {
-  height: 93%;
-}
-
 /* Show home when first loaded -- initial page */
 main .one {
   height: 100%;
@@ -69,7 +65,6 @@ strong {
 
 /*** Navbar properties ***/
 .navbar {
-  margin-top: 1%;
   white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
