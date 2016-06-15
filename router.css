@@ -2,8 +2,40 @@
 CSS Router written by Faraz Fazli - Released under the MIT License
 https://github.com/farazfazli/css-router
 *******************************************************************/
+<<<<<<< HEAD
 * {
   font-family: arial;
+=======
+
+/* Use Open Sans */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Disable scrolling on outer page */
+html, body {
+  overflow: hidden;
+  margin: 0;
+  height: 100%;
+}
+
+/*** Custom blue scrollbar ***/
+::-webkit-scrollbar {
+    width: 2px;
+    height: 0;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: blue;
+}
+/******************************/
+
+main {
+  height: 100%;
+  visibility: hidden;
+>>>>>>> gh-pages
 }
 
 /* Show home when first loaded -- initial page */
@@ -11,6 +43,7 @@ main .one {
   height: 100%;
 }
 
+<<<<<<< HEAD
 /* Disable scrolling for body */
 body {
   font-size: 1.3em;
@@ -26,18 +59,38 @@ h1, body {
 
 p {
   margin: 1%;
+=======
+body {
+  font-size: 1.3em;
+  background: white;
+}
+
+h1, body, p {
+  margin: 1%
+>>>>>>> gh-pages
 }
 
 /* Page-specific content, enable scrolling */
 .content {
+<<<<<<< HEAD
   padding: 1%;
   width: 100%;
   overflow: visible;
+=======
+  width: 100%;
+  visibility: visible;
+  overflow: auto;
+  margin-bottom: 100px;
+>>>>>>> gh-pages
 }
 
 /* Menu options, animation */
 .menu {
+<<<<<<< HEAD
   height: 0% ;
+=======
+  height: 0;
+>>>>>>> gh-pages
   overflow: auto;
   transition: all .3s;
   visibility: visible;
@@ -50,11 +103,19 @@ label {
   padding: .5vh;
 }
 
+<<<<<<< HEAD
+=======
+/* Flip colors on hover */
+>>>>>>> gh-pages
 label:hover {
   color: white;
   background: blue;
 }
 
+<<<<<<< HEAD
+=======
+/* Used for website title */
+>>>>>>> gh-pages
 strong {
   font-size: 1.1em;
 }
@@ -62,14 +123,21 @@ strong {
 
 /*** Navbar properties ***/
 .navbar {
+<<<<<<< HEAD
   margin-top: 1%;
+=======
+>>>>>>> gh-pages
   white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
 }
 
 .navbar::-webkit-scrollbar {
+<<<<<<< HEAD
   display: none;
+=======
+  height: 10%;
+>>>>>>> gh-pages
 }
 /************************/
 
@@ -114,7 +182,10 @@ hr {
 /* Optional footer/code styling */
 footer {
   background: blue;
+<<<<<<< HEAD
   height: auto;
+=======
+>>>>>>> gh-pages
   width: 100vmax;
   position: absolute;
   bottom: 0;
@@ -126,7 +197,11 @@ footer * {
 }
 
 footer p {    
+<<<<<<< HEAD
     padding: .1vmin;
+=======
+  padding: .1vmin;
+>>>>>>> gh-pages
 }
 
 /* Make code look like code, sometimes needs to be set explicitly */
