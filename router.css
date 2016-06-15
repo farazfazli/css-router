@@ -2,16 +2,21 @@
 CSS Router written by Faraz Fazli - Released under the MIT License
 https://github.com/farazfazli/css-router
 *******************************************************************/
+
+/* Use Open Sans */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
 * {
-  font-family: arial;
+  font-family: 'Open Sans', sans-serif;
 }
 
+/* Disable scrolling on outer page */
 html, body {
   overflow: hidden;
   margin: 0;
   height: 100%;
 }
 
+/*** Custom blue scrollbar ***/
 ::-webkit-scrollbar {
     width: 2px;
     height: 0;
@@ -21,6 +26,7 @@ html, body {
 ::-webkit-scrollbar-thumb {
     background: blue;
 }
+/******************************/
 
 main {
   height: 100%;
@@ -51,7 +57,7 @@ h1, body, p {
 
 /* Menu options, animation */
 .menu {
-  height: 0% ;
+  height: 0;
   overflow: auto;
   transition: all .3s;
   visibility: visible;
@@ -64,11 +70,13 @@ label {
   padding: .5vh;
 }
 
+/* Flip colors on hover */
 label:hover {
   color: white;
   background: blue;
 }
 
+/* Used for website title */
 strong {
   font-size: 1.1em;
 }
@@ -76,7 +84,6 @@ strong {
 
 /*** Navbar properties ***/
 .navbar {
-  margin-top: 1%;
   white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
@@ -85,7 +92,6 @@ strong {
 .navbar::-webkit-scrollbar {
   height: 10%;
 }
-
 /************************/
 
 /*** Pure CSS navbar functionality ***/
@@ -129,7 +135,6 @@ hr {
 /* Optional footer/code styling */
 footer {
   background: blue;
-  height: auto;
   width: 100vmax;
   position: absolute;
   bottom: 0;
