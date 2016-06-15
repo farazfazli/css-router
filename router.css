@@ -14,6 +14,8 @@ html, body {
 
 main {
   height: 100%;
+  overflow-y: visible;
+  visibility: hidden;
 }
 
 /* Show home when first loaded -- initial page */
@@ -38,8 +40,8 @@ p {
 /* Page-specific content, enable scrolling */
 .content {
   width: 100%;
-  overflow-x: auto;
-  overflow-y: hidden;
+  visibility: visible;
+  overflow: auto;
   margin-bottom: 100px;
 }
 
