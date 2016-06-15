@@ -6,8 +6,13 @@ https://github.com/farazfazli/css-router
   font-family: arial;
 }
 
-main {
+html, body {
   overflow: hidden;
+  margin: 0;
+  height: 100%;
+}
+
+main {
   height: 93%;
 }
 
@@ -33,7 +38,7 @@ p {
 /* Page-specific content, enable scrolling */
 .content {
   width: 100%;
-  overflow: visible;
+  overflow: auto;
   margin-bottom: 100px;
 }
 
