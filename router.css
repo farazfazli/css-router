@@ -89,8 +89,6 @@ strong {
 /*** Navbar properties ***/
 .navbar {
   white-space: nowrap;
-  overflow-x: auto;
-  overflow-y: hidden;
 }
 /************************/
 
@@ -123,6 +121,14 @@ strong {
   position: absolute;
   width: 1px;
 }
+
+/* Media queries for responsiveness */
+@media(max-width: 500px) {
+  .navbar {
+      font-size: .7em;
+  }
+}
+
 /**************************************/
 
 /* Divider */
@@ -135,10 +141,10 @@ hr {
 /* Optional footer/code styling */
 footer {
   background: blue;
-  height: 100px;
-  width: 100vmax;
+  height: 200px;
+  width: auto;
   position: relative;
-  margin-top: -100px;
+  margin-top: -150px;
 }
 
 footer * {
@@ -146,7 +152,7 @@ footer * {
 }
 
 footer p {    
-  padding: .1vmin;
+  padding: .5vmin;
 }
 
 /* Make code look like code, sometimes needs to be set explicitly */
