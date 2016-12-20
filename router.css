@@ -47,7 +47,7 @@ body {
   background: white;
 }
 
-h1, body, p {
+div h1, p {
   margin: 1%
 }
 
@@ -95,8 +95,7 @@ strong {
 /*** Pure CSS navbar functionality ***/
 /* When other menu items are first checked, hide initial page */
 #two:checked ~ main .one,
-#three:checked ~ main .one,
-#four:checked ~ main .one {
+#three:checked ~ main .one {
   height: 0% ;
   overflow: auto;
   transition: all .3s;
@@ -106,11 +105,18 @@ strong {
 /* When menu item clicked */
 #one:checked ~ main .one,
 #two:checked ~ main .two,
-#three:checked ~ main .three,
-#four:checked ~ main .four {
+#three:checked ~ main .three {
   display: block;
   height: 100%;
   visibility: visible;
+}
+
+/* Hyperlink-like look */
+#hyperlink {
+  text-decoration:underline;
+  background-color:white;
+  color:blue;
+  padding:0%;
 }
 
 /* Make radio buttons invisible */
@@ -120,13 +126,6 @@ strong {
   opacity: 0;
   position: absolute;
   width: 1px;
-}
-
-/* Media queries for responsiveness */
-@media(max-width: 500px) {
-  .navbar {
-      font-size: .7em;
-  }
 }
 
 /**************************************/
@@ -141,10 +140,10 @@ hr {
 /* Optional footer/code styling */
 footer {
   background: blue;
-  height: 200px;
+  height: 5vh;
   width: auto;
   position: relative;
-  margin-top: -150px;
+  margin-top: -7vh;
 }
 
 footer * {
@@ -160,4 +159,16 @@ code {
   font-family: monospace;
   color: blue;
   padding: 5%;
+}
+
+/* Media queries for responsiveness */
+@media(max-width: 750px) {
+  .navbar {
+      font-size: .7em;
+  }
+  footer {
+  background: blue;
+  height: 5vh;
+  margin-top: -5vh;
+  }
 }
